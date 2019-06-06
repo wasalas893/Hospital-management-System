@@ -41,7 +41,7 @@ if(isset($_POST['staff_submit']))
 	$lname=$_POST['lname'];
 	$email=$_POST['email'];
 	$contact=$_POST['contact'];
-	$docapp=$_POST['section'];
+	$section=$_POST['section'];
 	$query="insert into addnewstaff(fname,lname,email,contact,section)values('$fname','$lname','$email','$contact','$section')";
 	$result=mysqli_query($con,$query);
 
@@ -78,6 +78,32 @@ function get_patient_details(){
 		
 	}
 }
+
+
+function get_staff_details(){
+	global $con;
+	$query="select * from addnewstaff";
+	$result=mysqli_query($con,$query);
+	while ($row=mysqli_fetch_array($result)) {
+	    $fname=$row['fname'];
+	    $lname=$row['lname'];
+	    $email=$row['email'];
+	    $contact=$row['contact'];
+	    $section=$row['section'];
+
+	    echo " <tr>
+     
+      <td>$fname</td>
+      <td>$lname</td>
+      <td>$email</td>
+      <td>$contact</td>
+      <td>$section</td>
+    </tr>";
+		
+	}
+}
+
+
 
 
 
