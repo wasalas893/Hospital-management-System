@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <body>
-	<div class="jumbotron" style="background:url('images/1.jpg') no-repeat; background-size: cover; height: 300px;">
+	<div class="jumbotron" style="background:url('images/12.jpg') no-repeat; background-size: cover; height: 300px;">
 		
 	</div>
 	<div class="container">
@@ -43,7 +43,7 @@
     </tr>
   </thead>
   <tbody>
-  <?php get_staff_details(); ?>
+    
 
 
 
