@@ -44,7 +44,7 @@
   </thead>
   <tbody>
     
-
+  <?php get_staff_details(); ?>
 
 
 
